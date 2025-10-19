@@ -52,7 +52,7 @@ export default function Layout() {
 
             <Link to={createPageUrl("Home")} className="flex-shrink-0">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68eda7691cecfeb7be87cfd2/f998ee283_BM_rec.png"
+                src="/img/BM_rec.png"
                 alt="BM Luxury Ride"
                 className="h-16 md:h-20 w-auto"
               />

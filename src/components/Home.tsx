@@ -87,7 +87,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68eda7691cecfeb7be87cfd2/84452f484_BM_banner.png"
+            src="/img/BM_banner.png"
             alt="BM Luxury Ride - Dallas Skyline"
             className="w-full h-full object-cover"
           />
