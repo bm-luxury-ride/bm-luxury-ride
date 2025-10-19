@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, useLocation, Outlet } from "react-router-dom";
-import { createPageUrl } from "@/lib/utils";
+import { useLocation, Outlet } from "react-router-dom";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -37,8 +36,6 @@ export default function Layout() {
     { title: "Our Fleet"},
     { title: "Reserve"},
   ];
-
-  const isActive = (url: string) => location.pathname === url;
 
   return (
     <div className="min-h-screen bg-black">
