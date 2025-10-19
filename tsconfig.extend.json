@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      // file aliases
+      "@baz": ["./baz.ts"],
+      "@boo": ["./boo.tsx"],
+
+      // folder aliases
+      "@root": ["./"],
+      "@root/*": ["./*"],
+      "@lib": ["./lib"],
+      "@lib/*": ["./lib/*"],
+
+      // package aliases
+      "@my-react-select": [
+        "../node_modules/react-select",
+        "../node_modules/@types/react-select"
+      ],
+      "@my-react-select/*": [
+        "../node_modules/react-select/*",
+        "../node_modules/@types/react-select"
+      ]
+    }
+  }
+}
