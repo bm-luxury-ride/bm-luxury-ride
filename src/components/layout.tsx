@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useLocation, Outlet } from "react-router-dom";
 import { createPageUrl } from "@/lib/utils";
 import { Phone, Mail, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
 
 export default function Layout() {
   const location = useLocation();
@@ -31,9 +33,9 @@ export default function Layout() {
   }, []); // The empty dependency array means this runs once on mount
 
   const navigationItems = [
-    { title: "Home", url: createPageUrl("Home") },
-    { title: "Our Fleet", url: createPageUrl("Fleet") },
-    { title: "Reserve", url: createPageUrl("Booking") },
+    { title: "Home"},
+    { title: "Our Fleet"},
+    { title: "Reserve"},
   ];
 
   const isActive = (url: string) => location.pathname === url;
@@ -61,20 +63,9 @@ export default function Layout() {
             <div className="hidden lg:flex items-center gap-12">
               <nav className="flex items-center gap-12">
                 {navigationItems.map((item) => (
-                  <Link
-                    key={item.title}
-                    to={item.url}
-                    className={`text-sm tracking-widest uppercase font-medium transition-all duration-300 relative ${
-                      isActive(item.url)
-                        ? 'text-gold'
-                        : 'text-gray-300 hover-gold'
-                    }`}
-                  >
+                  <Button>
                     {item.title}
-                    {isActive(item.url) && (
-                      <span className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold to-transparent"></span>
-                    )}
-                  </Link>
+                  </Button>
                 ))}
               </nav>
 
@@ -115,16 +106,9 @@ export default function Layout() {
           <div className="lg:hidden bg-black border-t border-gold/20 shadow-2xl">
             <nav className="px-6 py-8 space-y-6">
               {navigationItems.map((item) => (
-                <Link
-                  key={item.title}
-                  to={item.url}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`block text-lg tracking-widest uppercase font-medium transition-colors duration-300 ${
-                    isActive(item.url) ? 'text-gold' : 'text-gray-300'
-                  }`}
-                >
+                <Button>
                   {item.title}
-                </Link>
+                </Button>
               ))}
               <div className="pt-6 border-t border-gold/20">
                 <a
@@ -183,12 +167,9 @@ export default function Layout() {
               <ul className="space-y-3">
                 {navigationItems.map((item) => (
                   <li key={item.title}>
-                    <Link 
-                      to={item.url} 
-                      className="text-gray-400 hover:text-gold transition-colors duration-300 text-sm"
-                    >
-                      {item.title}
-                    </Link>
+                    <Button>
+                      {item.title} 
+                    </Button>
                   </li>
                 ))}
               </ul>
