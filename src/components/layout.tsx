@@ -52,13 +52,13 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex justify-between items-center py-6">
 
-            <Link to={createPageUrl("Home")} className="flex-shrink-0">
+            <Button>
               <img 
                 src="/img/BM_rec.png"
                 alt="BM Luxury Ride"
                 className="h-16 md:h-20 w-auto"
               />
-            </Link>
+            </Button>
 
             <div className="hidden lg:flex items-center gap-12">
               <nav className="flex items-center gap-12">
@@ -82,12 +82,11 @@ export default function Layout() {
                     <div className="text-sm font-semibold">(469) 555-1234</div>
                   </div>
                 </a>
-                <Link
-                  to={createPageUrl("Booking")}
+                <Button
                   className="px-8 py-3 bg-gold text-black font-semibold tracking-wider uppercase text-sm hover:bg-gold-light transition-all duration-300 luxury-shadow"
                 >
                   Reserve Now
-                </Link>
+                </Button>
               </div>
             </div>
 
