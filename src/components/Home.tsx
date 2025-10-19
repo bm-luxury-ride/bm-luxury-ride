@@ -14,7 +14,6 @@ import {
   CheckCircle,
   ArrowRight,
   Award,
-  Users,
   Sparkles
 } from "lucide-react";
 import { motion } from "framer-motion";
