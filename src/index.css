@@ -1,3 +1,6 @@
+* {
+  outline: 1px solid red !important;
+}
 /* 1. All @import rules MUST be at the very top of the file. */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
