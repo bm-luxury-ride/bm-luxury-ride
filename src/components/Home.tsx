@@ -217,7 +217,6 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative overflow-hidden"
             >
               <span className="text-gold font-medium tracking-[0.3em] uppercase text-xs mb-6 block">Excellence in Every Detail</span>
               <h2 className="font-serif text-5xl md:text-6xl font-light text-white mb-8 leading-tight">
@@ -255,7 +254,7 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative"
+              className="relative overflow-hidden"
             >
               <div className="relative">
                 <img
