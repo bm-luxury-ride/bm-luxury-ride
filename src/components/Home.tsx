@@ -116,12 +116,12 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button>
+              
                 <Button className="px-10 py-7 text-base bg-gold text-black hover:bg-gold-light font-semibold tracking-widest uppercase luxury-shadow group relative overflow-hidden">
                   <span className="relative z-10">Reserve Your Experience</span>
                   <ArrowRight className="w-5 h-5 ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
-              </Button>
+              
               <a href="tel:+14695551234">
                 <Button 
                   variant="outline" 
@@ -241,12 +241,12 @@ export default function Home() {
                   </motion.div>
                 ))}
               </div>
-              <Button>
+              
                 <Button className="px-8 py-6 bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-black font-semibold tracking-wider uppercase transition-all duration-300">
                   Explore Our Fleet
                   <ArrowRight className="w-4 h-4 ml-3" />
                 </Button>
-              </Button>
+            
             </motion.div>
 
             <motion.div
@@ -346,12 +346,12 @@ export default function Home() {
               Reserve your premium experience today and discover why discerning clients choose BM Luxury Ride
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button>
+              
                 <Button className="px-10 py-7 text-base bg-gold text-black hover:bg-gold-light font-semibold tracking-widest uppercase luxury-shadow">
                   Reserve Now
                   <ArrowRight className="w-5 h-5 ml-3" />
                 </Button>
-              </Button>
+              
               <a href="tel:+14695551234">
                 <Button 
                   variant="outline" 
